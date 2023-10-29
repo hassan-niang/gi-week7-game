@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title> 
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+    <main>
+        <h1>Save Westrios from the White Walkers!</h1> 
+        <h3>The White Walkers are tring to cross over the Wall! In order to stop them and save the Kingdom of Westrios, you must defect the Night King in a battle of Rock, Paper, Scissors. </h3>
+        <div><img src="images /rules.png" alt="How to Play"></div>
+        <h3>How to Play</h3> 
+        <h4>Choose from the following weapons: Rock, Paper, or Scissors. 
+            <br>
+            <p>
+                <b>The Rules:</b>
+                <ul>
+                    <li>Rock beats scissors (Rock crushes scissors)</li>
+                    <li>Scissors beat paper (Scissors cut paper)</li>
+                    <li>Paper beats rock (Paper covers rock)</li>
+                </ul>
+            </p>
+       
+        <h4>How to Win?</h4> 
+            <p>
+                The winner is determined by the rules mentioned above.
+                For example, if one player chooses rock and the other chooses scissors, the player with rock wins.
+                <br>
+                Ties:
+                If both players choose the same shape, the game is a tie, and it's usually played again. <br> If you win <b>5</b> times you save Westrios, if not the Night King will take over and make a frozen kingdom!
+            </p>
+        
+        <h2>Choose your Weapon!</h2> 
+            <!-- <div>
+                <img id="rock" src="images /rock.jpeg" alt="rock" onclick="rounds('rock')">
+                <img id="paper" src="images /paper.jpeg" alt="paper" onclick="rounds('paper')">
+                <img id="scissors" src="images /scissors.jpeg" alt="scissors" onclick="rounds('scissors')">
+            </div>  --> 
+            <div>
+                <button class="btnchoice" data-selection="rock">👊🏿</button>
+                <button class="btnchoice" data-selection="paper">✋🏿</button>
+                <button class="btnchoice" data-selection="scissors">✌🏿</button>
+            </div> 
+            <div class="results">
+                <div>
+                    The Nights Watch 
+                    <span class="result-score" data-your-score >0</span>
+                </div> 
+                <div data-final-column ></div>
+                <div>The Night King 
+                    <span class="result-score" data-computer-score >0</span>
+                </div>
+                <!-- <div class="result-selection-winner">👊🏿</div>
+                <div class="result-selection">✌🏿</div> -->
+
+            </div>
+
+            <div id="choice"></div> 
+                <button id="play" onclick=""> Go to War!</button>
+            <div id="winner"></div> 
+            
+    </main>
+</body>
+</html>
